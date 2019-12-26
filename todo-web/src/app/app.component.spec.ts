@@ -32,4 +32,8 @@ describe('AppComponent', () => {
     const compiled = fixture.debugElement.nativeElement;
     expect(compiled.querySelector('.content span').textContent).toContain('todo-web app is running!');
   });
+
+  it('should be an easy pass', () => {
+    expect(true).toBeTruthy();
+  });
 });
