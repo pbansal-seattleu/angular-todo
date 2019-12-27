@@ -20,20 +20,16 @@ describe('AppComponent', () => {
     expect(app).toBeTruthy();
   });
 
-  it(`should have as title 'todo-web'`, () => {
+  it(`should have as title 'angular-todo'`, () => {
     const fixture = TestBed.createComponent(AppComponent);
     const app = fixture.debugElement.componentInstance;
-    expect(app.title).toEqual('todo-web');
+    expect(app.title).toEqual('angular-todo');
   });
 
   it('should render title', () => {
     const fixture = TestBed.createComponent(AppComponent);
     fixture.detectChanges();
     const compiled = fixture.debugElement.nativeElement;
-    expect(compiled.querySelector('.content span').textContent).toContain('todo-web app is running!');
-  });
-
-  it('should be an easy pass', () => {
-    expect(true).toBeTruthy();
+    expect(compiled.querySelector('.content span').textContent).toContain('angular-todo app is running!');
   });
 });
